@@ -1,0 +1,186 @@
+
+
+.titulo {
+    width: 100px;
+    padding: 0 40px;
+	background-image: linear-gradient(red, green);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    left: 12.6rem;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    animation: rotate 0.5s infinite linear;
+}
+body {
+    height: 900px;
+    background-color: #141414;
+    position : absolute;
+    top : 100;
+    bottom : 50;
+    left :  410px; 
+    right : 100px;
+    margin : auto;
+}
+.canvas {
+    box-shadow: green 0px 5px 27.5px, red 0px -6px 15px;
+    position: relative;
+    left: 30px;
+}
+.score-div {
+    width: 120px;
+    height: 100px;
+    position: relative;
+    left: 75%;
+    bottom: 860px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(red, green);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.game-hover {
+    width: 270px;
+    height: 100px;
+    position: relative;
+    left: 75%;
+    bottom: 600px;
+    font-size: 22px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.infor h2 {
+    position: relative;
+    right: 280px;
+    bottom: 600px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(red, green);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.infor p {
+    position: relative;
+    right: 365px;
+    bottom: 600px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(red, green);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.span1,.span2,.span3,.span4 {
+    background-color: white;
+    padding: 10px 30px;
+    position: relative;
+    right: 260px;
+    border-radius: 10px;
+    box-shadow: rgba(119, 222, 24, 0.717) 0 10px;
+    bottom: 500px;
+    color: black;
+}
+.span1 {
+    position: relative;
+    right: 310px;
+    bottom: 570px;
+}
+.span2 {
+    position: relative;
+    right: 330px;
+    bottom:500px;
+}
+.span3 {
+    position: relative;
+    right: 365px;
+    bottom: 500px;
+}
+.span4 {
+    position: relative;
+    right: 382px;
+    bottom: 430px;
+}
+@keyframes rotate {
+    0% {
+        filter: hue-rotate(0deg);
+        transition: 6s ease-in-out;
+    }
+    100% {
+        filter: hue-rotate(360deg);
+        transition: 6s ease-in-out;
+    }
+}
+.div-over {
+    position: relative;
+    bottom: 850px;
+    right: 90px;
+    width: 800px;
+    height: 290px;
+    background-image: linear-gradient(white, #d9d9d9d9);
+    text-align: center;
+    border-radius: 20px;
+    display: none;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.h1-over {
+    background-image: linear-gradient(red, green);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: rotate 0.5s infinite linear;
+    position: relative;
+    top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+.button-over {
+    border: none;
+    font-size: 18px;
+    background-image: linear-gradient(red, green);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: rotate 0.5s infinite linear;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    position: relative;
+    left: 380px;
+    top: 6px;
+    cursor: pointer;
+}
+
+
+@media screen and (width: 1920px) {
+    .titulo {
+        position: relative;
+        left: 490px;
+        top: 20px;
+        font-size: 40px;
+    }
+    .canvas {
+        position: relative;
+        left: 300px;
+        top: 50px;
+    }
+    .score-div {
+        width: 300px;
+        position: relative;
+        bottom: 800px;
+    }
+    .infor {
+        width: 500px;
+        position: relative;
+        top: 85px;
+        left: 100px;
+    }
+    .div-over {
+        position: relative;
+        bottom: 730px;
+        left: 200px;
+    }
+}
